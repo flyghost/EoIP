@@ -137,7 +137,7 @@ class PacketParser(Protocol):
             print(f"  块编号: {packet_info.get('block_num', '未知')}")
             if data and len(data) > 4:
                 print("  数据:")
-                HexPrinter.print_hex(data[4:], indent=4)
+                HexPrinter.print_hex(data[4:])
                 
         elif opcode == Protocol.TFTP_OP_ACK:
             print(f"  确认块编号: {packet_info.get('block_num', '未知')}")

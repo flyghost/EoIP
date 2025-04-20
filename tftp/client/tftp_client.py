@@ -267,7 +267,7 @@ def main():
     # 示例用法
     client = TftpClient('127.0.0.1', 1069)
     options = {'blksize': '1024', 'timeout': '10'}
-    if client.download_file('test.txt', 'downloaded.txt', options):
+    if client.download_file('test_download.txt', 'downloaded.txt', options):
         print("文件下载成功")
     else:
         print("文件下载失败")
