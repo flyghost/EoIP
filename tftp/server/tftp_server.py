@@ -36,7 +36,7 @@ class TFTPServer:
         
         # 模拟网络参数
         self.src_mac = 'aa:bb:cc:dd:ee:ff'  # 服务器MAC
-        self.src_ip = '192.168.1.1'         # 服务器IP
+        self.src_ip = '192.168.1.3'         # 服务器IP
         self.src_port = 69                  # TFTP标准端口
 
     def connect_to_bridge(self):
